@@ -1,0 +1,44 @@
+\documentclass[12pt]{IEEEtran}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{tcolorbox}
+
+\title{\textbf{Assignment-2}\\ \large AI1110: Probability And Random Variables\\ IIT Hyderabad}
+\author{Nunsavath Sree Harsha  CS21BTECH11042\\ }
+
+\begin{document}
+    \maketitle
+    \textbf{Q13(b)\hspace{1mm} Evaluate the given finite integral.}
+    \[ \int_{0}^{\pi/2} \frac{cos^2 x}{1+sin x cos x} \,dx \]
+    \textbf{Solution:-}\\
+    
+    % Redeifination of function
+    \begin{equation}
+       I=  \int_{0}^{\pi/2} \frac{cos^2 (x)}{1+sin x cos x} \,dx 
+       =\int_{0}^{\pi/2} \frac{cos^2 (\pi/2-x)}{1+sin(\pi/2-x)  cos (\pi-x)} \,dx  
+       
+       
+       I+I=\int_{0}^{\pi/2} \frac{cos^2 x}{1+sin x cos x} \,dx
+       
+       +\int_{0}^{\pi/2} \frac{cos^2 x}{1+sin x cos x} \,dx \\
+       
+       
+       2I=\int_{0}^{\pi/2} \frac{sec^2 x}{tan^2 x+tan x+1} \,dx \\
+       
+       
+       =2/\sqrt{3}[tan^-^1)(\infty)-tan^-^1(1/\sqrt{3}]\\
+       
+       
+       2/\sqrt{3}[tan^-^1(tan (\pi/2)-tan^-^1(tan \pi/6)]\\
+       
+       2I= 2/\sqrt{3}(\pi/2-\pi/6)\\
+       
+       
+       therefore, 
+       I=\pi/3\sqrt{3}
+    \end{equation}
+    
+    
+\end{document}
